@@ -25,3 +25,6 @@ function listarAmigos() {
         lista.appendChild(li)
     })
 }
+function resetList() {
+    document.getElementById('listaAmigos').innerHTML = ""
+}
