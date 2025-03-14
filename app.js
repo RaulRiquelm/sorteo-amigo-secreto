@@ -28,3 +28,19 @@ function listarAmigos() {
 function resetList() {
     document.getElementById('listaAmigos').innerHTML = ""
 }
+function amigoSecreto() {
+    const aleatorio = Math.floor(Math.random() * amigos.length)
+    return amigos[aleatorio]
+}
+function sortearAmigo() {
+    const amigoSelecionado = amigoSecreto()
+    const resultado = document.getElementById('resultado')
+
+    //crear un nuevo elemento <li>
+    const li = document.createElement('li')
+    li.textContent = `El amigo secreto es: ${amigoSelecionado}`
+
+    // agragar el li a la lista ul
+    resultado.appendChild(li)
+
+}
