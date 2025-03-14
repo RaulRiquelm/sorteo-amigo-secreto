@@ -160,3 +160,10 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+#button-reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: #4B69FD;
+}
